@@ -1,0 +1,382 @@
+{
+  "files": [
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2005",
+      "path": "data/raw/msu/schedule-2005.html",
+      "bytes": 840045,
+      "sha256": "bda109ed490838ff24b67815b83e5de16aa2696cde2e15ff4c624da62d42a39a"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2005-2006/teamcume.html",
+      "path": "data/raw/msu/stats-2005.html",
+      "bytes": 49231,
+      "sha256": "83aa1189da8f74fe212981918c1b933961a1947763bf45b77d84315217dfa686"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2005-08-01&endDate=2005-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2005.csv",
+      "bytes": 561406,
+      "sha256": "ca29381930a0e1152389b50a30245f40e4ddf08e0e801b26858fa4272311c67b"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2006",
+      "path": "data/raw/msu/schedule-2006.html",
+      "bytes": 858524,
+      "sha256": "f2289155ccea45e5d995f9c9dc5c1d5b78171508ad27962db20c3d24999c83bd"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2006-2007/teamcume.html",
+      "path": "data/raw/msu/stats-2006.html",
+      "bytes": 53061,
+      "sha256": "e77beced20b12a775325c6e8a6c8c0fd41a348fb184689aa1986016d8435cdcf"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2006-08-01&endDate=2006-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2006.csv",
+      "bytes": 584197,
+      "sha256": "318bfc1fb354723cd6984dfba8e77c66662165f064aa515336bce2691604b2a8"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2007",
+      "path": "data/raw/msu/schedule-2007.html",
+      "bytes": 877093,
+      "sha256": "4857a323de2d615bd9e4af8d1587c207e8fb4c22aee397c00aa4b0a8379cb812"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2007-2008/teamcume.html",
+      "path": "data/raw/msu/stats-2007.html",
+      "bytes": 54139,
+      "sha256": "120d7bcde605f6d1de841af999e02d2e0177e367777e404ac39264c1836158c9"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2007-08-01&endDate=2007-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2007.csv",
+      "bytes": 368270,
+      "sha256": "2e074bc58cf1f8315ec2428e7b1f352affe0ee5908a58819ee3b15f83e84ef51"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2008",
+      "path": "data/raw/msu/schedule-2008.html",
+      "bytes": 872754,
+      "sha256": "41b755c9625639c7f30b9039911b288b117975a2610d701991b4a586091cb3c5"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2008-2009/teamcume.html",
+      "path": "data/raw/msu/stats-2008.html",
+      "bytes": 51355,
+      "sha256": "68fa100555babb9bcc628cdaad1c66d216fa4a44be96e2e271d6c522c5b52137"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2008-08-01&endDate=2008-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2008.csv",
+      "bytes": 388903,
+      "sha256": "178f1c9bfd02ca2474955e61cc643bf29ccf63c211029d3ade3b7e55dc35511e"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2009",
+      "path": "data/raw/msu/schedule-2009.html",
+      "bytes": 880617,
+      "sha256": "e8dcca97ff1ab00ca9d75ce0a24682eb6f5eb96157e769ae82933d3f9d9ca66f"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2009-2010/teamcume.html",
+      "path": "data/raw/msu/stats-2009.html",
+      "bytes": 58352,
+      "sha256": "69d9594300b33becc58c3b4973357016b820d7d59c96d5149698feb9a1da947e"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2009-08-01&endDate=2009-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2009.csv",
+      "bytes": 387467,
+      "sha256": "363df7eae46f345f1bd4cf9a458aee05ca255a02eb8c79b87eceb72b8b357a2f"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2010",
+      "path": "data/raw/msu/schedule-2010.html",
+      "bytes": 885124,
+      "sha256": "dfc01550d69a219c3c96641a925bd05fa28b9951a6e256a9b658ee40d76f7262"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2010-2011/teamcume.html",
+      "path": "data/raw/msu/stats-2010.html",
+      "bytes": 53285,
+      "sha256": "72faf3ba37539425cf7cafa8fe86e52b2433d545fb0197ca8aca84177af444ca"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2010-08-01&endDate=2010-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2010.csv",
+      "bytes": 353016,
+      "sha256": "d77cee3369d98d001356b9101a3baed7f382f4655293e7592c2aebbcf7a4ae14"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2011",
+      "path": "data/raw/msu/schedule-2011.html",
+      "bytes": 894267,
+      "sha256": "f0add6a11481d549495095dbd6d225fca0ee058c09662fb35d675444617af9a0"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2011-2012/teamcume.html",
+      "path": "data/raw/msu/stats-2011.html",
+      "bytes": 59326,
+      "sha256": "c011fcdbf53c37d736633e523bc679c0f4ddb0a20d2409917e486218fac85533"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2011-08-01&endDate=2011-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2011.csv",
+      "bytes": 372848,
+      "sha256": "1ddc25e4202646b8469a1517f24305e95b6a2bc9fb2647d8f0263e16c4a67cfa"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2012",
+      "path": "data/raw/msu/schedule-2012.html",
+      "bytes": 883955,
+      "sha256": "9946d34f9bd456fcdd7716e7a6d23e423786e71c2c16d5747ec0e01bee0976fb"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2012-2013/teamcume.html",
+      "path": "data/raw/msu/stats-2012.html",
+      "bytes": 51736,
+      "sha256": "dd4e4ac6a7408057706b21ab5745778271c3975dd8551e902c6d802cc03bf17a"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2012-08-01&endDate=2012-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2012.csv",
+      "bytes": 365040,
+      "sha256": "9b36885b729c4ea9101629cd1036744dfce727e90610fd973f2cc98057ba374a"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2013",
+      "path": "data/raw/msu/schedule-2013.html",
+      "bytes": 881850,
+      "sha256": "edb3fe5f0025a0f3666f6b0e94a33c2e70a6b2e5ac0754aa119220b7ee34dcad"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2013-2014/teamcume.html",
+      "path": "data/raw/msu/stats-2013.html",
+      "bytes": 50971,
+      "sha256": "7943cdff4c8338c82a564d2d0a883661522fd163a903479045fc757baafa815e"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2013-08-01&endDate=2013-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2013.csv",
+      "bytes": 398076,
+      "sha256": "d02e1babb264792deff569455ceb644a348b5b226ebb54b7db70a15c469ee4a0"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2014",
+      "path": "data/raw/msu/schedule-2014.html",
+      "bytes": 884457,
+      "sha256": "53973f562927bf68f76acded9f0d2b892e9faa9ca923dd9b94f226a8258a253a"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2014-2015/teamcume.html",
+      "path": "data/raw/msu/stats-2014.html",
+      "bytes": 353722,
+      "sha256": "31e67d43b3671cf881214dc7da3001503202776f352065ce5bb67bcd776e8965"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2014-08-01&endDate=2014-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2014.csv",
+      "bytes": 415344,
+      "sha256": "4375531338030463173a8da2cb501eaa7275473df47805d906ec8c055fd820ec"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2015",
+      "path": "data/raw/msu/schedule-2015.html",
+      "bytes": 898986,
+      "sha256": "5dbfe5dd08b1a251d4b71842c70bbe46a5d5202f55e70ac9bd2f56e6a95cc6b3"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2015-2016/teamcume.html",
+      "path": "data/raw/msu/stats-2015.html",
+      "bytes": 373622,
+      "sha256": "7f7cca455ee101b9de135f5486798012d03c04ca2c2ae931c62c63a50be9b2fb"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2015-08-01&endDate=2015-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2015.csv",
+      "bytes": 379714,
+      "sha256": "34c32860ee30cb358699199b7e13bb2a60bae5eaed8dffed4799f2768ec92306"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2016",
+      "path": "data/raw/msu/schedule-2016.html",
+      "bytes": 874842,
+      "sha256": "dad23b2be1c6f8a0262c7226fee966779d3913e03dee6056c4399564711766fb"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2016-2017/teamcume.html",
+      "path": "data/raw/msu/stats-2016.html",
+      "bytes": 368390,
+      "sha256": "02e928638e9a1adf6b475e47900a635feb2b0f8261018f00dc24926bba8a8dd8"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2016-08-01&endDate=2016-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2016.csv",
+      "bytes": 402015,
+      "sha256": "249610e36190cb6594e8d6f293fb34732ec2af9bbda9d500fad7afb715ba57ef"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2017",
+      "path": "data/raw/msu/schedule-2017.html",
+      "bytes": 885890,
+      "sha256": "35712a01335cb5b0098c481f062c2da5b1dc179eb50a83812a2875ca6a757b9f"
+    },
+    {
+      "url": "https://michstate_ftp.sidearmsports.com/custompages/sports/m-footbl/stats/2017-2018/teamcume.html",
+      "path": "data/raw/msu/stats-2017.html",
+      "bytes": 362943,
+      "sha256": "7e4fc23ce81362e84327a2b2764a5b74b441ad626e3189f238c70621b0becb64"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2017-08-01&endDate=2017-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2017.csv",
+      "bytes": 388798,
+      "sha256": "fd206d0b10f03a2b044c934a67792a5bfb2020728fa04c3fbc721b9db3387c79"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2018",
+      "path": "data/raw/msu/schedule-2018.html",
+      "bytes": 906740,
+      "sha256": "259e011c788cfe175c4ceb34913b72ea12b5b3b68476fe9310e6ea21fe0aa2e8"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2018",
+      "path": "data/raw/msu/stats-2018.html",
+      "bytes": 1100642,
+      "sha256": "edc52fa34310c3903d7daa28bdc0a5f8e8328d13e3b9da062e22a90487f5085f"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2018-08-01&endDate=2018-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2018.csv",
+      "bytes": 417225,
+      "sha256": "3e7a30263b4354111e36a53b3cbd00542c52152e437fcbc46bb737751f276ad7"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2019",
+      "path": "data/raw/msu/schedule-2019.html",
+      "bytes": 924902,
+      "sha256": "d20450db131efd08675f5307638f84f004a7edef57fb4c0462d62a52b313c37c"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2019",
+      "path": "data/raw/msu/stats-2019.html",
+      "bytes": 1100758,
+      "sha256": "803369d41f892914f98442dccf641968a97277fdcd2a1495e50bbe073fcfe62d"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2019-08-01&endDate=2019-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2019.csv",
+      "bytes": 390967,
+      "sha256": "864924d68652138143b8136349a2a73028cb1dffc9182e77378b07074e8f0463"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2020",
+      "path": "data/raw/msu/schedule-2020.html",
+      "bytes": 825668,
+      "sha256": "14e861e3476d0766adf3406348452bbe2172f0ecb4779745781621c62eaaf881"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2020",
+      "path": "data/raw/msu/stats-2020.html",
+      "bytes": 1003862,
+      "sha256": "8172f16af3d5286b851920db34e9b0613fb70e03b528a70ac52d4887ccdc1fe2"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2020-08-01&endDate=2020-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2020.csv",
+      "bytes": 372342,
+      "sha256": "bc4463ee4f88a546b0f2350ed719f50fdf7002809484008b603e6712e6f6b6fc"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2021",
+      "path": "data/raw/msu/schedule-2021.html",
+      "bytes": 914233,
+      "sha256": "1470717bda8e05749d27ff9df224c23aabbfb80b45e0b35e6d437cd12446b3ea"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2021",
+      "path": "data/raw/msu/stats-2021.html",
+      "bytes": 1125300,
+      "sha256": "60c6230b3d3de284420f0006f224e66d6ecb9796c0ee641f0f0a1b0e5339f165"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2021-08-01&endDate=2021-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2021.csv",
+      "bytes": 395921,
+      "sha256": "fa33fda6815753225493eaae5d78118f82f5d4b157f733e4431f59209aa142dd"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2022",
+      "path": "data/raw/msu/schedule-2022.html",
+      "bytes": 883062,
+      "sha256": "953a1251bbf6823a3a16fc8abc7a62cf88dc41475d5f5af003ff1974679d8801"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2022",
+      "path": "data/raw/msu/stats-2022.html",
+      "bytes": 1116295,
+      "sha256": "4cf8a6cb388285acd6814dd60f1c2d8697663ea48c9ed4ec48aa528c39342555"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2022-08-01&endDate=2022-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2022.csv",
+      "bytes": 390380,
+      "sha256": "1efcbb871f9c239287966b1ebbb0edb7a68998ecc491bc4849e7b24a1e886186"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2023",
+      "path": "data/raw/msu/schedule-2023.html",
+      "bytes": 895240,
+      "sha256": "963d28fb82087c15b15283fa463cbd40c0e073b35f024b26b927bb5f9d2963e3"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2023",
+      "path": "data/raw/msu/stats-2023.html",
+      "bytes": 1126642,
+      "sha256": "b79b3a91b7d482c3acd56d794927e7214ab15569639a9c95a9a8bded9abf1215"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2023-08-01&endDate=2023-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2023.csv",
+      "bytes": 413770,
+      "sha256": "d26da53ad04ce3d4b08419ea4044ceda7b84d57d6c8b006d8140b95ecffeaedc"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2024",
+      "path": "data/raw/msu/schedule-2024.html",
+      "bytes": 904545,
+      "sha256": "ced7dc4265aa871b70cca05ab6baab36a73f4d4909764fd4181fca7c9d49846c"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2024",
+      "path": "data/raw/msu/stats-2024.html",
+      "bytes": 1101464,
+      "sha256": "346853850be9df59ffab3602f45ee2b0aca30dac5ce6caac9793f6c34b999e49"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2024-08-01&endDate=2024-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2024.csv",
+      "bytes": 419714,
+      "sha256": "f67a30ad324e91cebac34e53e689efcefb9445a5841378be69c16d7ad3787d25"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/schedule/2025",
+      "path": "data/raw/msu/schedule-2025.html",
+      "bytes": 930221,
+      "sha256": "61c75f1076446f5e64b9671a1d5a576afc19c4943403913db6167ad103d5c868"
+    },
+    {
+      "url": "https://msuspartans.com/sports/football/stats/2025",
+      "path": "data/raw/msu/stats-2025.html",
+      "bytes": 1115366,
+      "sha256": "15f89408c16e33373498468819d84bf27b6a1ecca643d83502735c0a62d6efa4"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=local-climatological-data-v2&stations=USW00014836&startDate=2025-08-01&endDate=2025-12-31&dataTypes=HourlyDryBulbTemperature%2CHourlyPrecipitation%2CHourlyWindSpeed&format=csv&units=metric",
+      "path": "data/raw/weather/noaa_lcdv2_2025.csv",
+      "bytes": 382575,
+      "sha256": "207f61a2231005ab2e6ae378f7bb06462936098e45719914d01dbed45d72176a"
+    }
+  ]
+}
