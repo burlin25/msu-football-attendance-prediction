@@ -26,6 +26,8 @@ Among the 123 games before the holdout, median attendance was 73,522. The middle
 
 ## How I tested it
 
+I used SQLite to calculate the record MSU brought into each game. The SQL query groups the full schedule by season, orders it by date, and counts wins and losses from earlier rows only. SQLite runs in memory through Python, so there’s no database to set up. The build writes those features to the CSV that pandas and scikit-learn use for modeling. [SQL query](src/msu_attendance/pipeline.py)
+
 Both models used the same inputs. Those were the opponent, month, Saturday or another day, kickoff hour, conference matchup, and wins and losses entering the game. I trained through 2023 and kept those fits fixed for both holdout seasons. I also ran a separate backtest where I trained on earlier seasons and predicted the next one. Each fit learned its preprocessing from the training games only.
 
 I tested temperature and wind separately on the same set of games with both readings available. They made the average error worse for both models in that comparison. These were observed conditions at the airport, so the experiment doesn’t tell us how a weather forecast would perform. MSU’s reported attendance is also the only crowd measure in the dataset. [Model comparison](reports/figures/model-errors.png)
