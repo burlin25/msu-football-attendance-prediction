@@ -23,7 +23,11 @@ The [processed CSV](data/processed/games.csv) has one row per completed MSU foot
 - `kickoff_local` includes the Eastern UTC offset, and `kickoff_hour` is the decimal local hour. `weather_observed_at` is UTC. Weather measurements are in °F, mph, and inches.
 - `model_eligible` and `model_exclusion` document which rows enter the backtest and why other rows are excluded.
 
-## 3. Compare the models
+## 3. Explore the development seasons
+
+Across the 123 games before the holdout, the median reported attendance was 73,522. The middle half of games drew about 71,000–75,100. Conference and nonconference medians were similar (73,510 across 74 games and 73,531 across 49 games). Pregame winning percentage and kickoff temperature had weak rank correlations with attendance (0.10 and 0.13). The winning percentage comparison omits season openers, when MSU had no record. These are unadjusted comparisons across seasons and opponents. [Attendance history](reports/figures/attendance-history.png) · [Game data](data/processed/games.csv)
+
+## 4. Compare the models
 
 The baseline predicts the median attendance of the latest available training season. Ridge regression shrinks coefficients for a small dataset with many opponent categories. The random forest averages shallow trees to allow nonlinear relationships. Both use the same schedule and prior-record inputs. Opponent is one-hot encoded, with an unseen opponent handled without fitting on the test set. All preprocessing is fit inside each training split.
 
@@ -31,7 +35,7 @@ For the primary comparison, both the fitted models and the baseline stay fixed a
 
 The weather analysis refits each model with and without airport temperature and wind using identical complete-weather rows. Quantitative precipitation was available for 106 games, with 16 additional trace observations. The weather comparison uses temperature and wind for better coverage. The main comparison uses schedule and record features that are available ahead of kickoff.
 
-## 4. Read the results
+## 5. Read the results
 
 On the 13 games in 2024–2025, mean absolute error was **4,184 attendees** for the 2023 median, **4,908** for Ridge regression, and **4,152** for random forest. The forest improved on the median by about 33 attendees per game, less than 1%. The median led in 2024, and the forest led in 2025. Across 89 games in the earlier expanding-season backtest, the corresponding MAEs were 2,740, 2,527, and 2,429. [Full metrics, including RMSE and each season](reports/metrics.json)
 
@@ -39,14 +43,14 @@ On the 13 games in 2024–2025, mean absolute error was **4,184 attendees** for 
 
 The forest’s largest holdout miss was the November 30, 2024 Rutgers game. It predicted about 66,297 attendees against a reported 50,038. Adding observed temperature and wind increased holdout MAE by 106 for Ridge and 227 for the forest in the matched comparison. [Game-level predictions](reports/predictions.csv) · [Holdout plot](reports/figures/holdout-predictions.png) · [Attendance history](reports/figures/attendance-history.png)
 
-## 5. Reproduce the project
+## 6. Reproduce the project
 
 Run from this directory with Python 3.11–3.13. The project snapshot was generated with Python 3.13.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
+python -m pip install -r requirements.txt
 ```
 
 To regenerate the evaluation and figures from the included dataset without downloading the source data:
