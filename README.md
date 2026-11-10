@@ -20,17 +20,46 @@ The main file is [games.csv](data/processed/games.csv). MSU Athletics posts sche
 
 The CSV includes 262 MSU games from 2005 through 2025, with 140 at Spartan Stadium. Away games still matter because they count toward the record MSU brought into its next home game. I left the four restricted-attendance games in 2020 out of the models, which left 136 games. Games at Ford Field are outside the stadium sample. [Data audit](reports/data_audit.json) · [2020 attendance policy](https://msuspartans.com/news/2020/9/16/the-big-ten-conference-adopts-stringent-medical-protocols-football-season-to-resume-october-23-24-2020) · [Ford Field announcement](https://msuspartans.com/news/2025/5/30/football-michigan-state-announces-ford-field-ticket-information-for-nov-29)
 
+```mermaid
+flowchart LR
+    A[MSU schedules] --> C[Match dates and check scores]
+    B[MSU season stats] --> C
+    C --> D[SQLite counts earlier wins and losses]
+    D --> E[Merge pregame record by season and date]
+    E --> F[Match airport reading to stadium kickoff]
+    G[NOAA weather CSV] --> F
+    F --> H[Cleaned games CSV]
+```
+
 ## What I checked before modeling
 
 Among the 123 games before the holdout, median attendance was 73,522. The middle half of games were between about 71,000 and 75,100. Conference and nonconference games had almost the same median. The rank correlations with pregame winning percentage and kickoff temperature were weak (0.10 and 0.13). I left season openers out of the winning percentage calculation because MSU had no record yet. [Attendance history](reports/figures/attendance-history.png)
+
+![Reported attendance by season at Spartan Stadium](reports/figures/attendance-history.png)
+
+![Reported attendance against entering win percentage and observed airport temperature](reports/figures/attendance-factors.png)
 
 ## How I tested it
 
 I used SQLite to calculate the record MSU brought into each game. The SQL query groups the full schedule by season, orders it by date, and counts wins and losses from earlier rows only. SQLite runs in memory through Python, so there’s no database to set up. The build writes those features to the CSV that pandas and scikit-learn use for modeling. [SQL query](src/msu_attendance/pipeline.py)
 
+Here’s the window used in the query. It stops one row before the game being predicted.
+
+```sql
+WINDOW earlier_games AS (
+    PARTITION BY season
+    ORDER BY game_date
+    ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+)
+```
+
+For example, MSU entered the 2025 UCLA game **3–2**. The two losses were both on the road. The UCLA loss only shows up in the record for the next game. You can check that in the `prior_wins` and `prior_losses` columns. [Game data](data/processed/games.csv) · [Record timing test](tests/test_snapshot.py)
+
 Both models used the same inputs. Those were the opponent, month, Saturday or another day, kickoff hour, conference matchup, and wins and losses entering the game. I trained through 2023 and kept those fits fixed for both holdout seasons. I also ran a separate backtest where I trained on earlier seasons and predicted the next one. Each fit learned its preprocessing from the training games only.
 
 I tested temperature and wind separately on the same set of games with both readings available. They made the average error worse for both models in that comparison. These were observed conditions at the airport, so the experiment doesn’t tell us how a weather forecast would perform. MSU’s reported attendance is also the only crowd measure in the dataset. [Model comparison](reports/figures/model-errors.png)
+
+![Holdout errors by model and error changes after adding observed weather](reports/figures/model-errors.png)
 
 ## Run it
 

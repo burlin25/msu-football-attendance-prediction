@@ -274,6 +274,38 @@ def _model_errors(metrics: dict, destination: Path) -> None:
     figure.savefig(destination, dpi=180)
 
 
+def _attendance_factors(games: pd.DataFrame, destination: Path) -> None:
+    prior_games = games["prior_wins"] + games["prior_losses"]
+    win_pct = games["prior_wins"].div(prior_games.where(prior_games.ne(0))).mul(100)
+    first, last = games["season"].agg(["min", "max"])
+    figure = _figure(
+        "Attendance vs. record and weather",
+        f"Spartan Stadium development games, {first}–{last} · one dot per game",
+        (10.8, 4.8),
+    )
+    axes = figure.subplots(1, 2, sharey=True)
+    figure.subplots_adjust(left=0.10, right=0.96, top=0.77, bottom=0.24, wspace=0.15)
+    for axis, values, label in [
+        (axes[0], win_pct, "MSU win percentage entering game (%)"),
+        (axes[1], games["temperature_f"], "Observed airport temperature (°F)"),
+    ]:
+        present = values.notna()
+        axis.scatter(
+            values[present], games.loc[present, "attendance"],
+            color="#187850", alpha=0.52, s=24, edgecolors="none",
+        )
+        axis.set_xlabel(f"{label} · {present.sum()} games", color=MUTED)
+        axis.yaxis.set_major_formatter(FuncFormatter(_thousands))
+        _axis_style(axis)
+    axes[0].set_ylabel("Reported attendance (people)", color=MUTED)
+    figure.text(
+        0.10, 0.065,
+        "Season openers have no prior record. Sources: Michigan State Athletics and NOAA NCEI.",
+        color=MUTED, size=9,
+    )
+    figure.savefig(destination, dpi=180)
+
+
 def render(games: pd.DataFrame, output_dir: Path) -> None:
     """Render figures from the clean games and the reports written by evaluate."""
     metrics = json.loads((output_dir / "metrics.json").read_text(encoding="utf-8"))
@@ -290,3 +322,7 @@ def render(games: pd.DataFrame, output_dir: Path) -> None:
     )
     _holdout_predictions(holdout, metrics, figures / "holdout-predictions.png")
     _model_errors(metrics, figures / "model-errors.png")
+    _attendance_factors(
+        games.loc[games["season"] < min(metrics["holdout_seasons"])],
+        figures / "attendance-factors.png",
+    )
