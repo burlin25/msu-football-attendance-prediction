@@ -43,11 +43,11 @@ def add_pregame_features(games: pd.DataFrame) -> pd.DataFrame:
     # Keep the full schedule here so earlier away games also count.
     with closing(sqlite3.connect(":memory:")) as database:
         games[["season", "game_date", "result"]].to_sql(
-            "game_results", database, index=False
+            "game_results", database, index_label="game_row"
         )
         records = pd.read_sql_query(
             """
-            SELECT season, game_date,
+            SELECT game_row,
                    COUNT(CASE WHEN result = 'W' THEN 1 END) OVER earlier_games AS prior_wins,
                    COUNT(CASE WHEN result = 'L' THEN 1 END) OVER earlier_games AS prior_losses
             FROM game_results
@@ -56,12 +56,13 @@ def add_pregame_features(games: pd.DataFrame) -> pd.DataFrame:
                 ORDER BY game_date
                 ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
             )
+            ORDER BY game_row
             """,
             database,
+            index_col="game_row",
+            dtype={"prior_wins": "int64", "prior_losses": "int64"},
         )
-    games = games.merge(
-        records, on=["season", "game_date"], validate="one_to_one"
-    )
+    games[["prior_wins", "prior_losses"]] = records
     return games
 
 

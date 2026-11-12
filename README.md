@@ -25,7 +25,7 @@ flowchart LR
     A[MSU schedules] --> C[Match dates and check scores]
     B[MSU season stats] --> C
     C --> D[SQLite counts earlier wins and losses]
-    D --> E[Merge pregame record by season and date]
+    D --> E[Attach pregame record to each game row]
     E --> F[Match airport reading to stadium kickoff]
     G[NOAA weather CSV] --> F
     F --> H[Cleaned games CSV]

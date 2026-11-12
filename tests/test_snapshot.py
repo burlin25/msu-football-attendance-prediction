@@ -5,6 +5,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from msu_attendance.pipeline import add_pregame_features
+
 
 class SnapshotTests(unittest.TestCase):
     @classmethod
@@ -37,6 +39,16 @@ class SnapshotTests(unittest.TestCase):
             for result, column in [("W", "prior_wins"), ("L", "prior_losses")]:
                 previous = season["result"].eq(result).cumsum().shift(fill_value=0)
                 self.assertEqual(season[column].tolist(), previous.tolist())
+
+    def test_sql_rebuilds_pregame_records_for_shuffled_games(self):
+        expected = self.games[["prior_wins", "prior_losses"]]
+        games = self.games.drop(columns=expected.columns).sample(frac=1, random_state=42)
+        games["game_date"] = pd.to_datetime(games["game_date"])
+
+        rebuilt = add_pregame_features(games)
+
+        pd.testing.assert_frame_equal(rebuilt[expected.columns], expected)
+        self.assertTrue(pd.api.types.is_datetime64_any_dtype(rebuilt["game_date"]))
 
     def test_weather_join_is_local_and_never_uses_a_later_reading(self):
         with_weather = self.games.loc[self.games["weather_observed_at"].notna()]
